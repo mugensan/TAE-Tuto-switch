@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TAE_Switch</string>
+    <string name="sw_off">OFF</string>
+    <string name="sw_on">ON</string>
+    <string name="switch_message_displayed_here">Switch message displayed here</string>
+    <string name="btn_show">show</string>
+</resources>

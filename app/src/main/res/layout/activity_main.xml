@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img_change_on_switch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fb"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/onOffSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="228dp"
+        android:textOff="@string/sw_off"
+        android:textOn="@string/sw_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sw_result"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/sw_result">
+
+    </Switch>
+
+    <Button
+        android:id="@+id/btn_sw_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:text="@string/btn_show"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/sw_result"
+        app:layout_constraintEnd_toEndOf="@+id/img_sw_on"
+        app:layout_constraintStart_toStartOf="@+id/img_sw_on" />
+
+    <TextView
+        android:id="@+id/sw_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:hint="@string/switch_message_displayed_here"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/onOff_message"
+        app:layout_constraintBottom_toTopOf="@+id/onOffSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sw_off"
+        app:layout_constraintStart_toStartOf="@+id/btn_sw_off" />
+
+    <ImageView
+        android:id="@+id/img_sw_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sw_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_sw_off"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="52dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/sw_result"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.489"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.021"-->
+        <!--app:srcCompat="@mipmap/ic_launcher_round" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
